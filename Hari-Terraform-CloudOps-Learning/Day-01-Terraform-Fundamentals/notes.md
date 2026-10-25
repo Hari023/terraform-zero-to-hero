@@ -53,6 +53,3 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-
-
-7. terraform destroy
