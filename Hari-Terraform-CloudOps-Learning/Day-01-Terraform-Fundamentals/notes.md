@@ -54,32 +54,5 @@ provider "aws" {
 }
 
 
-####3. Terraform Resource
-A resource represents infrastructure managed
-by Terraform.
-resource "aws_instance" "web_server" {
-  ami           = "ami-xxxxxxxx"
-  instance_type = "t3.micro"
 
-  tags = {
-    Name = "CloudOps-Demo"
-  }
-}
-
-
-- aws_instance: Resource type
-- web_server: Local resource name
-- ami: Amazon Machine Image ID
-- instance_type: EC2 instance size
-Note: The AMI ID is a placeholder.
-4. Terraform State
-Terraform maintains a state file named
-terraform.tfstate by default.
-
-It tracks managed resources and helps Terraform
-determine infrastructure changes.
-
-Important: Never commit state files containing
-sensitive information to GitHub.
-6. terraform apply
 7. terraform destroy
